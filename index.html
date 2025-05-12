@@ -3,58 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
+    <title>Your Name | CTF Writeups</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">YourName</div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Writeups</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Hi, I'm Your Name</h1>
-            <p>Your tagline or role</p>
-            <div class="social-links">
-                <!-- Add your social links -->
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+        <div class="container">
+            <div class="content">
+                <h1>Recent Writeups</h1>
+                
+                <!-- Writeup Cards -->
+                <div class="writeup-card">
+                    <div class="writeup-header">
+                        <h2>HackTheBox - Nocturnal</h2>
+                        <span class="date">May 1, 2025</span>
+                        <span class="platform">HackTheBox</span>
+                    </div>
+                    <div class="writeup-content">
+                        <p>Recon nmap scan: Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-01 19:28 EDT Nmap scan report for nocturnal.http...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="writeup-card">
+                    <div class="writeup-header">
+                        <h2>HackTheBox - Code</h2>
+                        <span class="date">Mar 29, 2025</span>
+                        <span class="platform">HackTheBox</span>
+                    </div>
+                    <div class="writeup-content">
+                        <p>This a pretty straightforward machine that focuses on how to bypass pyjail as well as the ability to read a bash script, rec...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="writeup-card">
+                    <div class="writeup-header">
+                        <h2>TryHackMe - Lookup</h2>
+                        <span class="date">Nov 27, 2024</span>
+                        <span class="platform">TryHackMe</span>
+                    </div>
+                    <div class="writeup-content">
+                        <p>Recon Nmap output # Nmap 7.945VN scan initiated Sat Nov 23 04:38:55 2024 as:/usr/lib/nmap/nmap --privileged -sC -s...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Your about text goes here...</p>
-        </section>
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Recently Updated</h3>
+                    <ul class="recent-list">
+                        <li><a href="#">HackTheBox - Nocturnal</a></li>
+                        <li><a href="#">HackTheBox - Code</a></li>
+                        <li><a href="#">TryHackMe - Lookup</a></li>
+                        <li><a href="#">HackTheBox - Monitor3Three</a></li>
+                        <li><a href="#">HackTheBox - Administrator</a></li>
+                    </ul>
+                </div>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <!-- Project cards will go here -->
+                <div class="sidebar-section">
+                    <h3>Trending Tags</h3>
+                    <div class="tags">
+                        <a href="#">Linux</a>
+                        <a href="#">Active Directory</a>
+                        <a href="#">HackTheBox</a>
+                        <a href="#">Command Injection</a>
+                        <a href="#">DCSync</a>
+                        <a href="#">GenericWrite</a>
+                        <a href="#">GOAD</a>
+                        <a href="#">IDOR</a>
+                        <a href="#">Installation</a>
+                        <a href="#">LDAP</a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <form>
-                <!-- Contact form elements -->
-            </form>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
